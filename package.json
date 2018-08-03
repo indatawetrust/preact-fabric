@@ -1,0 +1,33 @@
+{
+  "name": "preact-fabric",
+  "version": "1.0.0",
+  "module": "src/index.js",
+  "main": "dist/preact-fabric.js",
+  "repository": "indatawetrust/preact-fabric",
+  "description": "Simple and lightweight Fabric.js component for Preact",
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "author": {
+    "name": "Ahmet Şimşek",
+    "email": "iamaroott@gmail.com",
+    "url": "http://indatawetrust.blogspot.com/"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "postbuild": "uglifyjs dist/preact-fabric.js -c -m -o dist/preact-fabric.min.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.41.4",
+    "rollup-plugin-buble": "^0.15.0",
+    "uglify-js": "^2.7.5"
+  },
+  "peerDependencies": {
+    "preact": "^7.2.0"
+  },
+  "dependencies": {
+    "preact-append-child": "^1.0.3"
+  }
+}
