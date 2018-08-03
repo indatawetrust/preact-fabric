@@ -1,6 +1,6 @@
 {
   "name": "preact-fabric",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "module": "src/index.js",
   "main": "dist/preact-fabric.js",
   "repository": "indatawetrust/preact-fabric",
@@ -28,6 +28,7 @@
     "preact": "^7.2.0"
   },
   "dependencies": {
+    "fabric": "^2.3.3",
     "preact-append-child": "^1.0.3"
   }
 }
