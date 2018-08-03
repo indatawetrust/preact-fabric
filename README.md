@@ -42,6 +42,8 @@ render(<Demo />, document.body);
 
 ```
 
+[![Edit kw0lql5ylv](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/kw0lql5ylv)
+
 ## Install
 
 ```
