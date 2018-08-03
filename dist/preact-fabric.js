@@ -38,6 +38,15 @@ var Fabric = (function (Component) {
       }
     }
 
+    var attrs = this.props.attrs;
+
+    if (attrs && typeof attrs == "object") {
+      for (var key$1 in attrs) {
+        var value$1 = attrs[key$1];
+        canvas.setAttribute(key$1, value$1);
+      }
+    }
+
     var config = {};
 
     if (this.props.config && typeof this.props.config == 'object') {

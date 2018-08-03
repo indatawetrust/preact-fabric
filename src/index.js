@@ -25,6 +25,15 @@ export default class Fabric extends Component {
       }
     }
 
+    const attrs = this.props.attrs;
+
+    if (attrs && typeof attrs == "object") {
+      for (let key in attrs) {
+        const value = attrs[key];
+        canvas.setAttribute(key, value)
+      }
+    }
+
     let config = {};
 
     if (this.props.config && typeof this.props.config == 'object') {
